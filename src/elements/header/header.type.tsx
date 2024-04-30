@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { BaseElement } from "../../types";
+import { BaseElement } from "../../types/types";
 
 export interface props extends BaseElement {
     value: string

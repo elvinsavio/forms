@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { props } from "./formViewer.type";
-import { JSON } from "../../types";
+import { JSON } from "../../types/types";
 import Header from "../../elements/header";
 
 const FormViewer: FC<props> = (props) => {
