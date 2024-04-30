@@ -4,12 +4,13 @@ export interface Config {
 
 export type JSON = Array<Heading | Button>;
 
-interface Heading {
+export interface Heading {
   type: "header";
   value: string;
+  variant: "h1" | "h2" | "h3" | "h4" | "h5";
 }
 
-interface Button {
+export interface Button {
   type: "button";
 }
 

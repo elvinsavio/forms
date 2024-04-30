@@ -10,7 +10,7 @@ const Header: FC<props> = (props) => {
   const render = () => {
     switch (props.useLib) {
       case "mui":
-        return <MuiElement variant="h1">{props.value}</MuiElement>;
+        return <MuiElement variant={props.variant}>{props.value}</MuiElement>;
       default:
         return <>Not implemented yet</>
     }

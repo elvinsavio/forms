@@ -9,7 +9,13 @@ const FormViewer: FC<props> = (props) => {
     for (const element of json) {
       switch (element.type) {
         case "header":
-          return <Header useLib={config.useLib} value={element.value} />;
+          return (
+            <Header
+              useLib={config.useLib}
+              value={element.value}
+              variant={element.variant}
+            />
+          );
       }
     }
 

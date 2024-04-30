@@ -1,11 +1,12 @@
 import { ReactNode } from "react";
-import { BaseElement } from "../../types/types";
+import { BaseElement, Heading } from "../../types/types";
 
 export interface props extends BaseElement {
-    value: string
+  value: string;
+  variant: Heading["variant"];
 }
 
 export interface MuiElement {
-  variant: "h1" | "h2" | "h3" | "h4" | "h5";
-  children: ReactNode
+  variant: Heading["variant"];
+  children: ReactNode;
 }
